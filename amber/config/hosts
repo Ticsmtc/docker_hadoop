@@ -14,8 +14,3 @@ ff02::2		ip6-allrouters
 172.20.0.12	slave2
 172.20.0.13	slave3
 172.20.0.14	slave4
-172.20.0.15	slave5
-172.20.0.16	slave6
-172.20.0.17	slave7
-172.20.0.18	slave8
-172.20.0.19	slave9

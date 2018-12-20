@@ -457,3 +457,114 @@ storage types=RAM_DISK=0, SSD=0, DISK=0, ARCHIVE=0
 2018-12-19 14:45:09,873 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000002 size 329 bytes.
 2018-12-19 14:45:09,882 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 0
 2018-12-19 15:16:37,119 INFO BlockStateChange: BLOCK* processReport 0x383650dea263c7a0: from storage DS-56f9e5ec-79ef-486f-b941-b6d9513edaad node DatanodeRegistration(172.20.0.16:50010, datanodeUuid=b5205254-ba4d-4cd4-9ad9-938639d4bf78, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 2 msecs, invalidatedBlocks: 0
+2018-12-19 15:45:10,133 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 15:45:10,133 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 15:45:10,133 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 3, 3
+2018-12-19 15:45:10,134 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 12 
+2018-12-19 15:45:10,135 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
+2018-12-19 15:45:10,136 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000003 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000003-0000000000000000004
+2018-12-19 15:45:10,136 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 5
+2018-12-19 15:45:10,198 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 15:45:10,198 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000004 size 329 bytes.
+2018-12-19 15:45:10,208 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 2
+2018-12-19 15:45:10,208 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000000, cpktTxId=0000000000000000000)
+2018-12-19 16:45:10,437 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 16:45:10,437 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 16:45:10,437 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 5, 5
+2018-12-19 16:45:10,437 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 2 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 12 
+2018-12-19 16:45:10,438 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 2 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
+2018-12-19 16:45:10,439 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000005 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000005-0000000000000000006
+2018-12-19 16:45:10,439 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 7
+2018-12-19 16:45:10,490 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 16:45:10,490 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000006 size 329 bytes.
+2018-12-19 16:45:10,500 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 4
+2018-12-19 16:45:10,500 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000002, cpktTxId=0000000000000000002)
+2018-12-19 17:45:10,709 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 17:45:10,709 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 17:45:10,709 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 7, 7
+2018-12-19 17:45:10,710 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 13 
+2018-12-19 17:45:10,713 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 16 
+2018-12-19 17:45:10,714 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000007 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000007-0000000000000000008
+2018-12-19 17:45:10,715 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 9
+2018-12-19 17:45:10,770 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 17:45:10,770 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000008 size 329 bytes.
+2018-12-19 17:45:10,779 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 6
+2018-12-19 17:45:10,779 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000004, cpktTxId=0000000000000000004)
+2018-12-19 17:46:55,936 INFO BlockStateChange: BLOCK* processReport 0xcc30abb500347fd2: from storage DS-83d8dabd-8d7f-4c06-b402-9afe17fd2b2c node DatanodeRegistration(172.20.0.13:50010, datanodeUuid=a29ea846-0122-45a5-9f20-7f4eef777da4, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 1 msecs, invalidatedBlocks: 0
+2018-12-19 18:08:10,923 INFO BlockStateChange: BLOCK* processReport 0x7e129bc149a84665: from storage DS-d6574991-845c-44a0-936e-8084118f7a3d node DatanodeRegistration(172.20.0.17:50010, datanodeUuid=7b00e6fa-f43c-493e-9151-bc3ddbac1f64, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 18:16:01,939 INFO BlockStateChange: BLOCK* processReport 0x3c3bf61657aa2f36: from storage DS-e086c394-b0f8-456d-a5f8-531435230c35 node DatanodeRegistration(172.20.0.15:50010, datanodeUuid=e3aebf5c-5047-4afb-b8c1-fe87ea599951, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 18:24:25,970 INFO BlockStateChange: BLOCK* processReport 0xeb27658580fe7676: from storage DS-0033e9fa-aa4b-433b-8a20-3abf129b279b node DatanodeRegistration(172.20.0.18:50010, datanodeUuid=13b606a3-bf66-403f-b616-6b67d4ee433e, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 18:45:10,972 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 18:45:10,972 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 18:45:10,972 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 9, 9
+2018-12-19 18:45:10,972 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 14 
+2018-12-19 18:45:10,973 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 15 
+2018-12-19 18:45:10,974 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000009 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000009-0000000000000000010
+2018-12-19 18:45:10,974 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 11
+2018-12-19 18:45:11,024 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.00s at 0.00 KB/s
+2018-12-19 18:45:11,024 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000010 size 329 bytes.
+2018-12-19 18:45:11,034 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 8
+2018-12-19 18:45:11,034 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000006, cpktTxId=0000000000000000006)
+2018-12-19 19:14:44,225 INFO BlockStateChange: BLOCK* processReport 0x5bf0136da32e3c82: from storage DS-b49fa062-267c-41d8-b391-2e64aac56ec5 node DatanodeRegistration(172.20.0.12:50010, datanodeUuid=50c653b4-3ad9-45c9-ac89-ab4ebdde87c9, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 19:45:11,245 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 19:45:11,245 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 19:45:11,245 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 11, 11
+2018-12-19 19:45:11,245 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 13 
+2018-12-19 19:45:11,248 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 15 
+2018-12-19 19:45:11,249 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000011 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000011-0000000000000000012
+2018-12-19 19:45:11,249 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 13
+2018-12-19 19:45:11,304 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 19:45:11,304 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000012 size 329 bytes.
+2018-12-19 19:45:11,313 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 10
+2018-12-19 19:45:11,314 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000008, cpktTxId=0000000000000000008)
+2018-12-19 19:46:26,392 INFO BlockStateChange: BLOCK* processReport 0x9d28b9e6c27dbd22: from storage DS-5412ed8f-58e7-4507-b865-ba67dc52c643 node DatanodeRegistration(172.20.0.19:50010, datanodeUuid=bed7d910-32d1-4331-96dd-709b769a7213, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 19:58:44,447 INFO BlockStateChange: BLOCK* processReport 0x15ddc71fee1d6c26: from storage DS-8ebe40d4-4002-4431-ac70-fad3936f4916 node DatanodeRegistration(172.20.0.14:50010, datanodeUuid=15da98f6-cd1e-40de-95c7-c12f6b6adaab, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 20:16:50,984 INFO BlockStateChange: BLOCK* processReport 0xdd3bfd375cfe34e: from storage DS-7cf45486-319d-4a2c-a137-9ca43fd50b0f node DatanodeRegistration(172.20.0.11:50010, datanodeUuid=4f668614-b452-4cab-9021-023c0fce6dab, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 20:45:11,506 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 20:45:11,506 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 20:45:11,506 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 13, 13
+2018-12-19 20:45:11,507 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 12 
+2018-12-19 20:45:11,507 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 13 
+2018-12-19 20:45:11,508 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000013 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000013-0000000000000000014
+2018-12-19 20:45:11,508 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 15
+2018-12-19 20:45:11,562 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 20:45:11,562 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000014 size 329 bytes.
+2018-12-19 20:45:11,570 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 12
+2018-12-19 20:45:11,570 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000010, cpktTxId=0000000000000000010)
+2018-12-19 21:16:39,178 INFO BlockStateChange: BLOCK* processReport 0x383650dea263c7a1: from storage DS-56f9e5ec-79ef-486f-b941-b6d9513edaad node DatanodeRegistration(172.20.0.16:50010, datanodeUuid=b5205254-ba4d-4cd4-9ad9-938639d4bf78, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-19 21:45:11,758 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 21:45:11,758 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 21:45:11,758 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 15, 15
+2018-12-19 21:45:11,758 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 14 
+2018-12-19 21:45:11,766 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 1 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 21 
+2018-12-19 21:45:11,767 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000015 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000015-0000000000000000016
+2018-12-19 21:45:11,767 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 17
+2018-12-19 21:45:11,822 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 21:45:11,823 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000016 size 329 bytes.
+2018-12-19 21:45:11,832 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 14
+2018-12-19 21:45:11,832 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000012, cpktTxId=0000000000000000012)
+2018-12-19 22:45:12,010 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 22:45:12,010 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 22:45:12,010 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 17, 17
+2018-12-19 22:45:12,011 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 13 
+2018-12-19 22:45:12,013 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 15 
+2018-12-19 22:45:12,014 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000017 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000017-0000000000000000018
+2018-12-19 22:45:12,014 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 19
+2018-12-19 22:45:12,075 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 22:45:12,075 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000018 size 329 bytes.
+2018-12-19 22:45:12,084 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 16
+2018-12-19 22:45:12,084 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000014, cpktTxId=0000000000000000014)
+2018-12-19 23:45:12,256 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 172.20.0.10
+2018-12-19 23:45:12,256 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Rolling edit logs
+2018-12-19 23:45:12,256 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Ending log segment 19, 19
+2018-12-19 23:45:12,256 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 2 SyncTimes(ms): 13 
+2018-12-19 23:45:12,259 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 2 Total time for transactions(ms): 0 Number of transactions batched in Syncs: 0 Number of syncs: 3 SyncTimes(ms): 15 
+2018-12-19 23:45:12,259 INFO org.apache.hadoop.hdfs.server.namenode.FileJournalManager: Finalizing edits file /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_inprogress_0000000000000000019 -> /home/hadoop_admin/hadoop_data/temp/dfs/name/current/edits_0000000000000000019-0000000000000000020
+2018-12-19 23:45:12,260 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Starting log segment at 21
+2018-12-19 23:45:12,313 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Transfer took 0.01s at 0.00 KB/s
+2018-12-19 23:45:12,313 INFO org.apache.hadoop.hdfs.server.namenode.TransferFsImage: Downloaded file fsimage.ckpt_0000000000000000020 size 329 bytes.
+2018-12-19 23:45:12,322 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Going to retain 2 images with txid >= 18
+2018-12-19 23:45:12,322 INFO org.apache.hadoop.hdfs.server.namenode.NNStorageRetentionManager: Purging old image FSImageFile(file=/home/hadoop_admin/hadoop_data/temp/dfs/name/current/fsimage_0000000000000000016, cpktTxId=0000000000000000016)
+2018-12-19 23:46:57,991 INFO BlockStateChange: BLOCK* processReport 0xcc30abb500347fd3: from storage DS-83d8dabd-8d7f-4c06-b402-9afe17fd2b2c node DatanodeRegistration(172.20.0.13:50010, datanodeUuid=a29ea846-0122-45a5-9f20-7f4eef777da4, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-20 00:08:09,562 INFO BlockStateChange: BLOCK* processReport 0x7e129bc149a84666: from storage DS-d6574991-845c-44a0-936e-8084118f7a3d node DatanodeRegistration(172.20.0.17:50010, datanodeUuid=7b00e6fa-f43c-493e-9151-bc3ddbac1f64, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0
+2018-12-20 00:16:03,474 INFO BlockStateChange: BLOCK* processReport 0x3c3bf61657aa2f37: from storage DS-e086c394-b0f8-456d-a5f8-531435230c35 node DatanodeRegistration(172.20.0.15:50010, datanodeUuid=e3aebf5c-5047-4afb-b8c1-fe87ea599951, infoPort=50075, infoSecurePort=0, ipcPort=50020, storageInfo=lv=-57;cid=CID-4ac81ea8-5f95-4f55-87af-4216b46de084;nsid=445358040;c=1545230623957), blocks: 0, hasStaleStorage: false, processing time: 0 msecs, invalidatedBlocks: 0

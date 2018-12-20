@@ -8,6 +8,8 @@
 
 
 import os
+import sys 
+
 
 HOST_LIST = []
 
@@ -59,12 +61,14 @@ def create_container(ContainerName,NetName,IpAddress,UserName):
 	global HOST_LIST
 
 	print("Create container : " + ContainerName)
+	abslute_dir_path = os.path.dirname(os.path.realpath(__file__))
+	print("-v " + abslute_dir_path + ":/home/" + UserName + "/amber" + " ")
 
 	os.system(
 		"docker run -dt " +
 		"--name " + ContainerName + " " +
 
-		"-v $PWD:/home/" + UserName + "/amber" + " " +
+		"-v " + abslute_dir_path + ":/home/" + UserName + "/amber" + " " +
 
 
 		"--hostname " + ContainerName + " " +
@@ -100,11 +104,12 @@ def create_hosts_file():
 
 	global HOST_LIST
 
+	abslute_dir_path = os.path.dirname(os.path.realpath(__file__))
 
-	templete = open("./config/hosts.temp",mode="r")
-	hosts_file = open("./config/hosts",mode="w")
-	server_ip_list = open("./config/server_ip_list",mode="w")
-	slaves_list = open("./config/hadoop_etc/slaves",mode="w")
+	templete = open(abslute_dir_path + "/config/hosts.temp",mode="r")
+	hosts_file = open(abslute_dir_path + "/config/hosts",mode="w")
+	server_ip_list = open(abslute_dir_path + "/config/server_ip_list",mode="w")
+	slaves_list = open(abslute_dir_path + "/config/hadoop_etc/slaves",mode="w")
 
 	templete_str = templete.readlines()
 	templete_str += HOST_LIST
@@ -152,7 +157,7 @@ if __name__ == "__main__":
 
 
 	create_container("master","hadoop_net","172.20.0.10","hadoop_admin")
-	for namei in range(1,10):
+	for namei in range(1,5):
 		create_container("slave"+str(namei),"hadoop_net","172.20.0.1"+str(namei),"hadoop_admin")	
 
 
@@ -161,11 +166,11 @@ if __name__ == "__main__":
 	create_hosts_file()
 	
 	config_container_sshd("master","hadoop_admin",UserPassword,RootPassword)
-	for namei in range(1,10):
+	for namei in range(1,5):
 		config_container_sshd("slave"+str(namei),"hadoop_admin",UserPassword,RootPassword)	
 		
 	config_container_ssh("master","hadoop_admin",UserPassword,RootPassword)
-	for namei in range(1,10):
+	for namei in range(1,5):
 		config_container_ssh("slave"+str(namei),"hadoop_admin",UserPassword,RootPassword)
 
 
